@@ -148,8 +148,8 @@ A partir da análise da planta física do novo minishopping, foi proposta  a cri
     \renewcommand*\listfigurename{Lista de figuras}
 \listoffigures
 
-\renewcommand*\listtablename{Lista de tabelas}
-\listoftables
+%%\renewcommand*\listtablename{Lista de tabelas}
+%%\listoftables
 
 
 
@@ -173,11 +173,13 @@ O estabelecimento possui térreo e primeiro andar, com diversas lojas voltadas a
 \subsection{Benefícios}
 Com a implantação de um projeto de infraestrutura de redes no início do projeto do shopping será possível:
 \begin{itemize}
-	\item diminuir as despesas com projetos futuros
-	\item evitar intervenções físicas invasivas 
-	\item fornecer um recurso diferenciado e de qualidade, facilitando a vida dos lojistas e contribuindo para satisfação dos frequentadores do ambiente
- 	\item facilitar futuras expansões 
+	\item diminuir despesas com projetos futuros
+	\item permitir intervenções físicas menos invasivas 
+	\item fornecer um recurso diferenciado e de qualidade, facilitando a vida dos lojistas
+	\item contribuir para a satisfação dos frequentadores do ambiente
+ 	\item facilitar futuras expansões.
 \end{itemize}
+Além dos benefícios acima citados, um bom projeto leva à economia de recursos e agilidade na entrega do resultado final.
 
 \section{Usuários e Aplicativos}
 A partir de um levantamento realizado junto aos responsáveis pelo projeto do shopping, e com o síndico do mesmo, foi possível realizar uma estimativa da quantidade de usuários que desfrutarão da infraestrutura de rede.
@@ -190,30 +192,32 @@ Estima-se os seguintes números de usuários:
 	\item Funcionários do shopping: 20
 	\item Clientes: 300
 \end{itemize}
-
 Pensando em situações onde o fluxo de de pessoas seja maior, como em épocas de grandes vendas, bem como após uma futura expansão física do edifício, projetou-se a infraestrutura capaz de servir o triplo do número de usuários.
 Assim, a infraestrutura suporta com qualidade, aproximadamente 1000 usuários simultaneos.
 
 \subsection{Aplicativos}
-Espera-se o uso de uma diversidade de aplicativos devido aos diferentes tipos de usuários que irão usufruir da rede. Entretanto, deve-se considerar primeiramente os aplicativos multimídea, pois estes são grandes consumidores de largura de banda.
+Espera-se o uso de uma diversidade de aplicativos computacionais devido aos diferentes tipos de usuários que irão usufruir da rede. Considerando que atualmente existe uma gama de aplicativos que trafegam dados multimídea, 
+estes estão entre os tipos que merecem especial atenção, visto que são grandes consumidores de largura de banda.
 Entre os aplicativos utilizados pelos funcionários e clientes destacam-se:
 \begin{itemize}
 	\item Aplicativos de comunicação: WhatsApp, Facebook, Skype, SnapChat
 	\item Serviços WEB em geral
+	\item Softwares comerciais e de gestão
+	\item Sistemas de banco de dados
 \end{itemize}
-É importante considerar as necessidades específicas da equipe de TI responsável pelo gerenciamento do parque tecnológico. Destacam-se os seguintes serviços:
+É importante considerar as necessidades específicas da equipe de TI responsável pelo gerenciamento do parque tecnológico, dentre os quais destacam-se os seguintes serviços:
 \begin{itemize}
 	\item Serviços de compartilhamento de arquivos e impressoras
 	\item Sistema de backup 
 	\item Sistemas de monitoramento e gerenciamento
 	\item Sistemas de câmeras de seguraça
+	\item Serviços de rede em geral (HTTP, HTTPS, DNS, DHCP, RADIUS)
 \end{itemize} 
-
+Outros tipos de aplicativos poderiam ser listados, mas os acima citados fornecem subsídios suficientes para o correto dimensionamento da infraestrutura de rede.
 
 \section{Estrutura predial existente}
-
 O projeto físico compreende um prédio contendo 2 pavimentos, primeiro e segundo andar, cada um contendo 8 salas para lojistas, além de banheiros, salas de gerência e áreas comuns.
-Nas figuras \ref{L1} e \ref{L3} é possível verificar a planta do térreo e primeiro andar, respectivamente, suas dimensões e a quantidade de material referente ao cabeamento estruturado utilizado em cada pavimento.
+Nas figuras \ref{L1} e \ref{L3} é possível verificar a planta do térreo e primeiro andar, respectivamente, suas dimensões e características referentes ao material utilizado no encaminhamento do cabeamento estruturado pela construção.
 
 \begin{figure}
 \centering
@@ -229,7 +233,7 @@ Nas figuras \ref{L1} e \ref{L3} é possível verificar a planta do térreo e pri
 \label{L3}
 \end{figure}
 
-O layout das salas para lojistas pode ser verificado na figura \ref{L2}.
+A planta física das salas para lojistas, bem como seu projeto lógico de cabeamento pode ser verificado na figura \ref{L2}.
 
 \begin{figure}
 \centering
@@ -267,11 +271,11 @@ A visa frontal do rack principal pode ser visualizado na figura \ref{rack}. Nele
 %%\input{tab1}
 
 \subsection{Encaminhamento}
-Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
+O mapa de encaminhamento do cabeamento pode ser visto nas figuras \ref{L1}, \ref{L2}, \ref{L3}. O encaminhamento será feito através do uso de eletrocalhas perfuradas suspensas acima do teto, sendo conectadas por curvas ou "Tês" quando necessário.
+Nas salas eletrodutos de PVC serão instalados verticalmente nos locais onde deverão ser instalados os pontos de conexão.
 
 \subsection{Memorial descritivo}
 %%Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
-
 Equipamento passivos utilizados no projeto:
 \begin{itemize}
 	\item 01 DIO B48  FURUKAWA- Módulo Básico: Responsável por acomodar e proteger a fusão de transição entre o cabo óptico e as extensões ópticas (pigtails) ou para acomodar os cabos pré-conectorizados de fábrica ou conectorizados em campo.  
@@ -287,7 +291,6 @@ Equipamento passivos utilizados no projeto:
 \subsection{Identificação dos cabos}
 
 \section{Implantação}
-
 O cronograma de execução das tarefas está de acordo com a figura \ref{tarefas}.
 
 \begin{figure}
@@ -352,28 +355,30 @@ As seguintes caractéristicas serão testadas:
 	\item Tempo de propagação
 	\item ACR (\textit{Atenuation to Crosstalk Ratio})
 \end{itemize}
-
-Quais seriam as etapas para a certificação? 
-Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
-Como os testes seriam executados?
-Quais relatórios de certificação serão (ou deveriam ser) entregues? 
-
+%%Quais seriam as etapas para a certificação? 
+%%Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
+%%Como os testes seriam executados?
+%%Quais relatórios de certificação serão (ou deveriam ser) entregues? 
 \section{Plano de manutenção}
-
 Considerando-se que o projeto só será entregue após obter resultados positivos da certificação da rede, a manutenção da rede seguirá uma abordagem corretiva.
 A partir do momento que a rede estiver em operação, esta será monitorada continuamente pela equipe de TI através da utilização de ferramentas específicas que suportem o protocolo SNMP (\textit{Simple Network Management Protocol}).
 Assim será possível identificar possíveis problemas, os quais podem requerer uma análise mais minuciosa, podendo ou não levar à substituição de algum componente do cabeamento.
 
 
 \subsection{Plano de expansão}
-Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as estremidades da rede? 
+Com o objetivo de permitir uma expansão da rede de forma mais tranquila, optou-se por utilizar três switches L2 com 24 portas, sendo o número suficiente para atender o número de pontos ativos.
+Além deles, o switch de core, tem um chassis modular, capaz de suportar até 5 placas com 24 portas GigaEthernet, permitindo adicionar mais 120 pontos à rede, bastando apenas comprar os módulos ao invés de outros switches.
+Caso a expansão seja além desses valores, será precisa adicionar outros switches à topologia, conectando-os diretamente ao switch core utilizando portas ópticas de 10Gigabits.
 
 
 \section{Orçamento}
-Crie uma relação de orçamentos baseado na seções anteriores.
-
-
-
+Os custos relacionados aos equipamentos passivos do projeto estão discriminados na figura \ref{orcamento}.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{orcamento}
+\caption{Orçamento}
+\label{orcamento}
+\end{figure}
 
 
 \section{Referências bibliográficas}
