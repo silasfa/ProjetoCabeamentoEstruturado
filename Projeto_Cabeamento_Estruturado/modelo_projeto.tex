@@ -165,20 +165,23 @@ A partir da análise da planta física do novo minishopping, foi proposta  a cri
 %% ====================================
 %% ====================================
 \section{Introdução}
-Visando uma adequação as normas e atender a demanda por conexão, uma construtora ao formular uma planta para  mini shopping tecnológico, para tal, decidiu inserir em seu projeto, a estrutura física para comportar a gama de dispositivos que serão utilizados pelos lojistas e clientes, com uma parceria com uma empresa de cabeamento estruturado formula um projeto de cabeamento para vídeo, voz e dados.
-
-Tal projeto tem como base explorar o atual cenário físico e já em sua base inserir uma topologia que atenda inicialmente na inauguração e a futura expansão do comercio varejista.
-
-O estabelecimento possui térreo e primeiro andar, com diversas lojas voltadas ao comercio, diversificado, com o diferencial de já fornecer uma estrutura padrão NBR 14565-2007 seguindo a risca as normas técnicas estabelecidas para um bom desempenho.
+Visando uma adequação às normas e a atender à demanda por conexão de rede, uma construtora, ao formular a planta para um  mini shopping tecnológico, decidiu inserir em seu projeto a estrutura física necessária para comportar a gama de dispositivos computacionais que serão utilizados pelos lojistas e clientes.
+A partir de uma parceria com uma empresa de cabeamento estruturado, foi formulado um projeto de cabeamento estruturado capaz de fornecer conexão para dados, vídeo e voz.
+Tal projeto tem como objetivo explorar o atual cenário físico e já em sua base inserir uma topologia que atenda não apenas inicialmente após a inauguração, mas também seja capaz de permitir uma futura expansão de forma eficiente.
+O estabelecimento possui térreo e primeiro andar, com diversas lojas voltadas ao comercio, diversificado, com o diferencial de já fornecer uma estrutura padrão NBR 14565-2007 seguindo fielmente as normas técnicas estabelecidas para um bom desempenho.
 
 \subsection{Benefícios}
-Com a implantação da estrutura de redes no inicio do projeto irá diminuir e muito as despesas com projetos futuros, tendo em vista o diferencial de já possuir toda infraestrutura para atender a demanda dos clientes e lojistas podendo oferecer um serviço com maior qualidade.
-Todo projeto foi formulado para atender atual demanda e as futuras expansões, visando conforto e comodidade, com intervenções físicas mínimas. Além do fato de proporcionar um diferencial a todos os clientes.
-
+Com a implantação de um projeto de infraestrutura de redes no início do projeto do shopping será possível:
+\begin{itemize}
+	\item diminuir as despesas com projetos futuros
+	\item evitar intervenções físicas invasivas 
+	\item fornecer um recurso diferenciado e de qualidade, facilitando a vida dos lojistas e contribuindo para satisfação dos frequentadores do ambiente
+ 	\item facilitar futuras expansões 
+\end{itemize}
 
 \section{Usuários e Aplicativos}
-A partir de um levantamento realizado junto aos responsáveis pelo projeto do edifício do shopping e com o síndico do mesmo foi possível estimar a quantidade de funcionários das lojas e do shopping,
-bem como o número médio de clientes que o espaço comporta simultaneamente.
+A partir de um levantamento realizado junto aos responsáveis pelo projeto do shopping, e com o síndico do mesmo, foi possível realizar uma estimativa da quantidade de usuários que desfrutarão da infraestrutura de rede.
+O levantamento considerou a quantidade de funcionários das lojas, do próprio shopping, bem como o número médio de clientes que o espaço irá comportar simultaneamente.
 
 \subsection{Usuários}
 Estima-se os seguintes números de usuários:
@@ -187,8 +190,9 @@ Estima-se os seguintes números de usuários:
 	\item Funcionários do shopping: 20
 	\item Clientes: 300
 \end{itemize}
-Pensando em situações onde o fluxo de de pessoas seja maior, como em épocas de grandes vendas, bem como uma futura expansão física do edifício, projetou-se a infraestrutura para servir o triplo do número de usuários.
-Assim, a infraestrutura suporta com qualidade, aproximadamente 1000 usuários simultaneamente.
+
+Pensando em situações onde o fluxo de de pessoas seja maior, como em épocas de grandes vendas, bem como após uma futura expansão física do edifício, projetou-se a infraestrutura capaz de servir o triplo do número de usuários.
+Assim, a infraestrutura suporta com qualidade, aproximadamente 1000 usuários simultaneos.
 
 \subsection{Aplicativos}
 Espera-se o uso de uma diversidade de aplicativos devido aos diferentes tipos de usuários que irão usufruir da rede. Entretanto, deve-se considerar primeiramente os aplicativos multimídea, pois estes são grandes consumidores de largura de banda.
@@ -208,45 +212,51 @@ Entre os aplicativos utilizados pelos funcionários e clientes destacam-se:
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
-Pode ser anexada, em escala ou não.
-
-Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
-
+O projeto físico compreende um prédio contendo 2 pavimentos, primeiro e segundo andar, cada um contendo 8 salas para lojistas, além de banheiros, salas de gerência e áreas comuns.
+Nas figuras \ref{L1} e \ref{L3} é possível verificar a planta do térreo e primeiro andar, respectivamente, suas dimensões e a quantidade de material referente ao cabeamento estruturado utilizado em cada pavimento.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{planta-shop}
-\caption{Exemplo de figura com escala horizontal}
-\label{rack}
+\includegraphics[width=\textwidth]{L1}
+\caption{Planta do térreo}
+\label{L1}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{layout-sala}
-\caption{Exemplo de figura com escala horizontal}
-\label{rack}
+\includegraphics[width=\textwidth]{L3}
+\caption{Planta do primeiro andar}
+\label{L3}
+\end{figure}
+
+O layout das salas para lojistas pode ser verificado na figura \ref{L2}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{L2}
+\caption{Planta das salas}
+\label{L2}
 \end{figure}
 
 \section{Planta Lógica - Elementos estruturados}
 
-
 \subsection{Topologia}
-Em sua estrutura a empresa optou por dois links de igual capacidade para fornecer conforto e segurança aos usuários, L2 em switchs Datacom, com terminações ONU substituindo cabeamento ethernet, L3 roteador  MX5-Juniper interfaces de 10Gbps. 
+Em sua estrutura a empresa optou por utilizar dois links de internet de igual capacidade para fornecer redundância e segurança aos usuários durante a navegação, L2 em switchs Datacom, com terminações ONU (\textit{Optical Network Unit}) substituindo cabeamento ethernet, L3 com roteador  MX5-Juniper utilizando interfaces de 10Gbps. 
 Com a utilização das OLT/ONU, possibilitou uma infraestrutura moderna e extremamente rápida se compararmos aos moldes atuais.
+A rede lógica da infraestutura de redes pode ser visualizada na figura \ref{topologia}.
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{topologia}
-\caption{Exemplo de figura com escala horizontal}
+\caption{Topologia de redel}
 \label{topologia}
 \end{figure}
 
-Visão frontal do rack , nele constam os seguintes equipamentos: Roteadores das operadoras,  router principal, distribuidores opticos, terminadores de linhas opticas, servidor interno, réguas, fonte de alimentação e o inversor para o banco de baterias estacionarias, com as quais garantiremos um fornecimento de energia em caso de interrupções no fornecimento.
+A visa frontal do rack principal pode ser visualizado na figura \ref{rack}. Nele constam os seguintes equipamentos: Roteadores das operadoras,  router principal, distribuidores opticos, terminadores de linhas opticas, servidor interno, réguas, fonte de alimentação e o inversor para o banco de baterias estacionarias, com as quais garantiremos um fornecimento de energia em caso de interrupções no fornecimento.
 
 \begin{figure}
 \centering
 \includegraphics[height=\textwidth]{rack}
-\caption{Exemplo de figura com escala horizontal}
+\caption{Vista frontal do Rackl}
 \label{rack}
 \end{figure}
 
@@ -260,8 +270,19 @@ Visão frontal do rack , nele constam os seguintes equipamentos: Roteadores das 
 Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
 
 \subsection{Memorial descritivo}
+%%Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
 
-Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
+Equipamento passivos utilizados no projeto:
+\begin{itemize}
+	\item 01 DIO B48  FURUKAWA- Módulo Básico: Responsável por acomodar e proteger a fusão de transição entre o cabo óptico e as extensões ópticas (pigtails) ou para acomodar os cabos pré-conectorizados de fábrica ou conectorizados em campo.  
+	\item 04 Patch Panels 24 portas FURUWAKA
+	\item 01 Kit Bandeja de Emenda 12F: Responsável por acomodar e proteger as emendas ópticas e o excesso de fibra. Composto por uma bandeja de emenda para até 12/24 fibras fabricada em plástico de alto impacto UL-94 V0.
+	\item 01 Kit Placa LGX: Conjunto composto por 3 placas LGX adequadas para instalação em DIOs que suportem a instalação de placa LGX. Disponível em material plástico ou metálico.
+	\item 01 Kit Placa LGX - 12 posições SC/APC
+	\item 01 Kit de ancoragem e acomodação: Conjunto composto por acessórios de fixação dos cabos ópticos na entrada do DIO. Possibilita mais de duas formas de ancoragem dos cabos.
+	\item 01 Extensão Óptica Conectorizada: Cada kit atende 2 ou 6 fibras e é composto por adaptadores ópticos e extensões ópticas. Ideal para aplicações com fusão de fibras no DIO.
+	\item 80 Conector Cat6 Fêmea Furukawa
+\end{itemize}
 
 \subsection{Identificação dos cabos}
 
@@ -281,7 +302,7 @@ Na figura \ref{pessoas} estão relacionadas as tarefas e respectivos responsáve
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{pessoas}
-\caption{Pessoas e atividadesl}
+\caption{Pessoas e atividades}
 \label{pessoas}
 \end{figure}
 %%Estabeleça um cronograma de implantação:
@@ -350,6 +371,10 @@ Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na red
 
 \section{Orçamento}
 Crie uma relação de orçamentos baseado na seções anteriores.
+
+
+
+
 
 \section{Referências bibliográficas}
 %%Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
